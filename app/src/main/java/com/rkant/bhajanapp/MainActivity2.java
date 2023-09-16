@@ -24,12 +24,12 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
-    public void switchToSecondFragment() {
-
+    public void switchToSecondFragment(int i) {
+        String str= String.valueOf(i);
         FragmentManager fragmentManager=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
         fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.add(R.id.frameLayoutMain,new SecondTestFragment()).commit();
+        fragmentTransaction.add(R.id.frameLayoutMain,new SecondRootFragment(str)).commit();
 
     }
 }

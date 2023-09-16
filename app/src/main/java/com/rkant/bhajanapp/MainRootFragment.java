@@ -105,7 +105,7 @@ public class MainRootFragment extends Fragment {
     }
     public void fragmentCaller(int position){
         Toast.makeText(getContext(), ""+position, Toast.LENGTH_SHORT).show();
-        ((MainActivity2)getActivity()).switchToSecondFragment();
+        ((MainActivity2)getActivity()).switchToSecondFragment(position);
 
 
 
