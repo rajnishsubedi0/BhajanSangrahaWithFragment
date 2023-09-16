@@ -1,4 +1,4 @@
-package com.rkant.bhajanapp;
+package com.rkant.bhajanapp.secondActivities;
 
 import android.os.Bundle;
 
@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.rkant.bhajanapp.FirstActivities.Main_DataHolderUsingArraylist;
+import com.rkant.bhajanapp.R;
 import com.rkant.bhajanapp.secondActivities.SecondMainActivity_ActualBhajanShowingActivity;
 import com.rkant.bhajanapp.secondActivities.SecondView_RecyclerView;
 
@@ -46,13 +47,11 @@ public class SecondRootFragment extends Fragment {
         return view;
     }
     private void setData(){
-        Toast.makeText(getContext(), position, Toast.LENGTH_SHORT).show();
         if (position!=null){
 
             if (position.equalsIgnoreCase("0")){
                 strings=getResources().getStringArray(R.array.zero_ganapati);
                 startLoop();
-                Toast.makeText(getContext(), "Executed", Toast.LENGTH_SHORT).show();
             }
 
             else if (position.equalsIgnoreCase("1")){

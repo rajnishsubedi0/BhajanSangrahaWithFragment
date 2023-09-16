@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.rkant.bhajanapp.MainRootFragment;
 import com.rkant.bhajanapp.R;
 import com.rkant.bhajanapp.secondActivities.SecondView_DataHolderUsingArraylist;
 

@@ -1,6 +1,5 @@
-package com.rkant.bhajanapp;
+package com.rkant.bhajanapp.FirstActivities;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,7 +12,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
-import com.rkant.bhajanapp.FirstActivities.Main_BhajanMenuListRecyclerView;
+import com.rkant.bhajanapp.MainActivity2;
+import com.rkant.bhajanapp.R;
 import com.rkant.bhajanapp.secondActivities.SecondView_DataHolderUsingArraylist;
 
 import java.util.ArrayList;
@@ -104,7 +104,6 @@ public class MainRootFragment extends Fragment {
 
     }
     public void fragmentCaller(int position){
-        Toast.makeText(getContext(), ""+position, Toast.LENGTH_SHORT).show();
         ((MainActivity2)getActivity()).switchToSecondFragment(position);
 
 
